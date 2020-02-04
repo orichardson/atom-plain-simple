@@ -57,9 +57,19 @@
   'text':
     'patterns': [
       {
+         #custom: bookmarks
+        'match': '(\\[!.*\\])'
+        'name': 'text.plain.simple.custom-bookmark'
+      }
+      {
         # Headings
         'match': '^(?:\\s*)(\\[\\b.+\\b\\])(?:\\s*)$'
         'name': 'text.plain.simple.plainsimple-heading'
+      }
+      {
+         # custom: notes
+        'match': '(\\[\\[\\b.+\\b\\]\\])'
+        'name': 'text.plain.simple.custom-note'
       }
       {
         # Lists
